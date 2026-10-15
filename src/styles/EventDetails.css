@@ -1,0 +1,1310 @@
+/* =========================================================
+   EVENT DETAILS PAGE
+========================================================= */
+
+.event-details {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+.event-details .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.event-details .back-link:hover {
+    color: #3730a3;
+}
+
+.details-card {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.details-content {
+    padding: 32px;
+}
+
+.details-content h1 {
+    margin: 0 0 16px;
+    color: #111827;
+    font-size: 32px;
+    font-weight: 750;
+    line-height: 1.3;
+}
+
+.event-details .event-category {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.description-section {
+    margin-top: 28px;
+}
+
+.description-section h2,
+.description-section h3 {
+    margin: 0 0 12px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.description-section p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.event-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.detail-item {
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #f9fafb;
+}
+
+.detail-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.detail-item strong {
+    display: block;
+    color: #111827;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.detail-price {
+    color: #059669 !important;
+    font-size: 22px !important;
+    font-weight: 750;
+}
+
+.event-image-container {
+    width: 100%;
+    max-height: 420px;
+    overflow: hidden;
+    background: #f3f4f6;
+}
+
+.event-image {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.no-image {
+    display: flex;
+    min-height: 220px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+    color: #6366f1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.book-event-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 28px;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.book-event-button:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+.book-event-button:disabled {
+    cursor: not-allowed;
+    background: #9ca3af;
+    transform: none;
+}
+
+.sold-out-message,
+.booking-disabled-message {
+    margin-top: 20px;
+    padding: 14px 16px;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* =========================================================
+   EVENT STATUS
+========================================================= */
+
+.event-status {
+    display: inline-flex;
+    margin: 16px 0;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.status-upcoming {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-ongoing {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.status-completed {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.status-cancelled {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.event-notice {
+    margin-top: 20px;
+    padding: 16px 18px;
+    border: 1px solid;
+    border-radius: 12px;
+}
+
+.event-notice strong {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.event-notice p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.cancelled-notice {
+    border-color: #fecaca;
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.completed-notice {
+    border-color: #d1d5db;
+    background: #f9fafb;
+    color: #374151;
+}
+
+.ongoing-notice {
+    border-color: #bfdbfe;
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.upcoming-notice {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+    color: #166534;
+}
+
+/* =========================================================
+   EVENT RATING SUMMARY
+========================================================= */
+
+.event-rating-summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    color: #374151;
+}
+
+.rating-star {
+    color: #f59e0b;
+    font-size: 23px;
+    line-height: 1;
+}
+
+.event-rating-summary > strong {
+    color: #111827;
+    font-size: 18px;
+}
+
+.rating-summary-text {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================================================
+   EVENT REVIEWS SECTION
+========================================================= */
+
+.reviews-section {
+    margin-top: 36px;
+    padding: 32px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.reviews-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.reviews-eyebrow {
+    color: #4f46e5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.reviews-header h2 {
+    margin: 8px 0;
+    color: #111827;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.reviews-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.reviews-rating-card {
+    display: flex;
+    min-width: 145px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #e0e7ff;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+}
+
+.reviews-rating-card .rating-star {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.reviews-rating-card > strong {
+    color: #312e81;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.reviews-rating-card > span:not(.rating-star) {
+    margin-top: 5px;
+    color: #6366f1;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reviews-rating-card small {
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+/* =========================================================
+   REVIEW FORM
+========================================================= */
+
+.review-form-card {
+    margin-top: 28px;
+    padding: 26px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #fafaff;
+}
+
+.review-form-card h3 {
+    margin: 0 0 22px;
+    color: #111827;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.review-field-label {
+    display: block;
+    margin: 18px 0 10px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.star-rating-input {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.rating-star-button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #d1d5db;
+    cursor: pointer;
+    font-size: 35px;
+    line-height: 1.2;
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.rating-star-button.selected {
+    color: #f59e0b;
+}
+
+.rating-star-button:hover {
+    transform: scale(1.12);
+}
+
+.rating-star-button:focus-visible {
+    outline: 2px solid #4f46e5;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.rating-hint {
+    margin: 8px 0 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.review-form-card textarea {
+    display: block;
+    width: 100%;
+    min-height: 130px;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #111827;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-form-card textarea::placeholder {
+    color: #9ca3af;
+}
+
+.review-form-card textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.review-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.submit-review-button,
+.cancel-edit-button,
+.review-login-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.submit-review-button {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+.submit-review-button:hover {
+    background: #4338ca;
+}
+
+.cancel-edit-button {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+}
+
+.cancel-edit-button:hover {
+    background: #f3f4f6;
+}
+
+.submit-review-button:disabled,
+.cancel-edit-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.review-policy-note {
+    margin: 16px 0 0;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.review-login-prompt p {
+    margin: 0 0 16px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.review-login-button {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+.review-login-button:hover {
+    background: #4338ca;
+}
+
+.existing-review-notice {
+    padding: 16px;
+    border: 1px solid #c7d2fe;
+    border-radius: 10px;
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.existing-review-notice strong {
+    font-size: 14px;
+}
+
+.existing-review-notice p {
+    margin: 7px 0 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   REVIEW ALERTS
+========================================================= */
+
+.review-alert {
+    margin-top: 16px;
+    padding: 13px 15px;
+    border: 1px solid;
+    border-radius: 9px;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.review-alert-error {
+    border-color: #fecaca;
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.review-alert-success {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+    color: #166534;
+}
+
+/* =========================================================
+   REVIEWS LIST
+========================================================= */
+
+.reviews-list-section {
+    margin-top: 36px;
+}
+
+.reviews-list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.reviews-list-heading h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.reviews-list-heading > span {
+    padding: 6px 11px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.review-card {
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+    border-color: #c7d2fe;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+.review-card-top {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.reviewer-avatar {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4f46e5, #818cf8);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.reviewer-information {
+    min-width: 0;
+}
+
+.reviewer-name-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+}
+
+.reviewer-name-row > strong {
+    color: #111827;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.your-review-badge {
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.review-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 5px;
+}
+
+.review-card-rating > span {
+    color: #f59e0b;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.review-card-rating > strong {
+    color: #6b7280;
+    font-size: 11px;
+}
+
+.review-card-text {
+    margin: 18px 0 0;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.review-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.edit-review-button,
+.delete-review-button {
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 7px;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.edit-review-button {
+    border-color: #c7d2fe;
+    color: #4338ca;
+}
+
+.edit-review-button:hover {
+    background: #eef2ff;
+}
+
+.delete-review-button {
+    border-color: #fecaca;
+    color: #b91c1c;
+}
+
+.delete-review-button:hover {
+    background: #fef2f2;
+}
+
+.edit-review-button:disabled,
+.delete-review-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* =========================================================
+   EMPTY REVIEWS STATE
+========================================================= */
+
+.reviews-empty-state {
+    padding: 44px 20px;
+    border: 1px dashed #d1d5db;
+    border-radius: 14px;
+    background: #fafafa;
+    color: #6b7280;
+    text-align: center;
+    font-size: 14px;
+}
+
+.empty-review-icon {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: #eef2ff;
+    color: #f59e0b;
+    font-size: 27px;
+}
+
+.reviews-empty-state h4 {
+    margin: 0 0 9px;
+    color: #111827;
+    font-size: 17px;
+}
+
+.reviews-empty-state p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 900px) {
+    .event-details {
+        padding: 24px 18px;
+    }
+
+    .details-content {
+        padding: 26px;
+    }
+
+    .details-content h1 {
+        font-size: 28px;
+    }
+
+    .reviews-section {
+        padding: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .event-details {
+        padding: 18px 12px;
+    }
+
+    .details-content {
+        padding: 20px;
+    }
+
+    .details-content h1 {
+        font-size: 24px;
+    }
+
+    .event-details-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .event-image-container,
+    .event-image {
+        max-height: 260px;
+    }
+
+    .no-image {
+        min-height: 160px;
+    }
+
+    .book-event-button {
+        font-size: 15px;
+    }
+
+    .reviews-section {
+        margin-top: 24px;
+        padding: 20px 15px;
+        border-radius: 14px;
+    }
+
+    .reviews-header {
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .reviews-header h2 {
+        font-size: 23px;
+    }
+
+    .reviews-header p {
+        font-size: 13px;
+    }
+
+    .reviews-rating-card {
+        min-width: 90px;
+        padding: 12px 9px;
+    }
+
+    .reviews-rating-card > strong {
+        font-size: 27px;
+    }
+
+    .reviews-rating-card small {
+        text-align: center;
+    }
+
+    .review-form-card {
+        padding: 19px 14px;
+    }
+
+    .review-form-card h3 {
+        font-size: 18px;
+    }
+
+    .rating-star-button {
+        font-size: 31px;
+    }
+
+    .reviews-list-heading h3 {
+        font-size: 17px;
+    }
+
+    .review-card {
+        padding: 17px 14px;
+    }
+
+    .reviewer-avatar {
+        width: 39px;
+        height: 39px;
+    }
+
+    .review-form-actions {
+        flex-direction: column;
+    }
+
+    .submit-review-button,
+    .cancel-edit-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .reviews-header {
+        flex-direction: column;
+    }
+
+    .reviews-rating-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* =========================================================
+   MODULE 18: REAL-TIME TICKET AVAILABILITY
+========================================================= */
+
+.availability-live-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin: 4px 0 12px;
+    padding: 9px 13px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    background: #f9fafb;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.availability-status-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #9ca3af;
+}
+
+.availability-connected {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.availability-connected .availability-status-dot {
+    background: #16a34a;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+.availability-connecting {
+    border-color: #bfdbfe;
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.availability-connecting .availability-status-dot {
+    background: #2563eb;
+    animation: availability-pulse 1.2s ease-in-out infinite;
+}
+
+.availability-disconnected {
+    border-color: #fed7aa;
+    background: #fff7ed;
+    color: #9a3412;
+}
+
+.availability-disconnected .availability-status-dot {
+    background: #ea580c;
+}
+
+.availability-detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.availability-ticket-count {
+    color: #111827;
+    font-size: 24px !important;
+    font-weight: 800;
+    transition: color 0.2s ease;
+}
+
+.availability-helper-text {
+    display: block;
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+@keyframes availability-pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .availability-connecting .availability-status-dot {
+        animation: none;
+    }
+}
+
+/* =========================================================
+   MODULE 21: LIVE EVENT UPDATES & ANNOUNCEMENTS
+========================================================= */
+
+.event-announcements-section {
+    margin-top: 36px;
+    padding: 32px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.event-announcements-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.event-announcements-eyebrow {
+    color: #4f46e5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.event-announcements-header h2 {
+    margin: 8px 0;
+    color: #111827;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.event-announcements-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.event-announcements-live-badge {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    border: 1px solid #bbf7d0;
+    border-radius: 999px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.announcement-form-card {
+    margin-top: 24px;
+    padding: 22px;
+    border: 1px solid #e0e7ff;
+    border-radius: 14px;
+    background: #fafaff;
+}
+
+.announcement-form-card label {
+    display: block;
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.announcement-form-card textarea {
+    display: block;
+    width: 100%;
+    min-height: 110px;
+    padding: 13px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #111827;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.announcement-form-card textarea::placeholder {
+    color: #9ca3af;
+}
+
+.announcement-form-card textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.announcement-form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.announcement-form-footer > span {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.announcement-form-footer button {
+    min-height: 42px;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 9px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.announcement-form-footer button:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+.announcement-form-footer button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+}
+
+.announcement-alert {
+    margin-top: 16px;
+    padding: 12px 15px;
+    border: 1px solid;
+    border-radius: 9px;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.announcement-alert-error {
+    border-color: #fecaca;
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.announcement-alert-success {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.event-announcements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.event-announcement-card {
+    padding: 20px 22px;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #6366f1;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-announcement-card:hover {
+    border-top-color: #c7d2fe;
+    border-right-color: #c7d2fe;
+    border-bottom-color: #c7d2fe;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+.event-announcement-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.event-announcement-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.event-announcement-date {
+    color: #6b7280;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.event-announcement-message {
+    margin: 14px 0 0;
+    color: #374151;
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.event-announcement-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.event-announcement-actions button {
+    padding: 8px 11px;
+    border: 1px solid #fecaca;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #b91c1c;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.event-announcement-actions button:hover {
+    background: #fef2f2;
+}
+
+.event-announcement-actions button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.announcement-empty-state {
+    margin-top: 24px;
+    padding: 34px 20px;
+    border: 1px dashed #d1d5db;
+    border-radius: 12px;
+    background: #fafafa;
+    color: #6b7280;
+    text-align: center;
+    font-size: 14px;
+}
+
+.announcement-empty-state h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 17px;
+}
+
+.announcement-empty-state p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    .event-announcements-section {
+        margin-top: 24px;
+        padding: 22px 16px;
+        border-radius: 14px;
+    }
+
+    .event-announcements-header {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .event-announcements-header h2 {
+        font-size: 22px;
+    }
+
+    .event-announcements-live-badge {
+        align-self: flex-start;
+    }
+
+    .announcement-form-card {
+        padding: 17px 13px;
+    }
+
+    .announcement-form-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .announcement-form-footer button {
+        width: 100%;
+    }
+
+    .event-announcement-card {
+        padding: 17px 14px;
+    }
+
+    .event-announcement-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

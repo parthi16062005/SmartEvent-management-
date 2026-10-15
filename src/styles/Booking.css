@@ -1,0 +1,595 @@
+/* =========================================================
+BOOKING PAGE
+========================================================= */
+
+.booking-page {
+min-height: calc(100vh - 70px);
+padding: 50px 20px 70px;
+background: #f8fafc;
+}
+
+.booking-card {
+width: 760px;
+max-width: 100%;
+margin: 0 auto;
+padding: 40px;
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 12px;
+box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* BOOKING HEADER */
+
+.booking-header {
+padding-bottom: 25px;
+border-bottom: 1px solid #e5e7eb;
+}
+
+.booking-header .event-category {
+margin-bottom: 12px;
+}
+
+.booking-header h1 {
+margin: 0 0 8px;
+color: #111827;
+font-size: 30px;
+line-height: 1.25;
+}
+
+.booking-event-title {
+margin: 0;
+color: #4b5563;
+font-size: 16px;
+font-weight: 500;
+}
+
+/* EVENT INFORMATION */
+
+.booking-info {
+margin-top: 25px;
+overflow: hidden;
+border: 1px solid #e5e7eb;
+border-radius: 9px;
+background: #ffffff;
+}
+
+.booking-info-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+min-height: 62px;
+padding: 15px 18px;
+border-bottom: 1px solid #e5e7eb;
+}
+
+.booking-info-row:last-child {
+border-bottom: none;
+}
+
+.booking-info-row span {
+color: #64748b;
+font-size: 13px;
+font-weight: 500;
+}
+
+.booking-info-row strong {
+color: #111827;
+font-size: 14px;
+font-weight: 600;
+text-align: right;
+}
+
+.booking-price {
+color: #2563eb !important;
+font-size: 16px !important;
+}
+
+/* QUANTITY SECTION */
+
+.quantity-section {
+margin-top: 30px;
+padding: 22px;
+border: 1px solid #e5e7eb;
+border-radius: 9px;
+background: #f8fafc;
+}
+
+.quantity-section label {
+display: block;
+margin-bottom: 13px;
+color: #374151;
+font-size: 14px;
+font-weight: 600;
+}
+
+.quantity-control {
+display: flex;
+align-items: center;
+width: fit-content;
+min-height: 44px;
+overflow: hidden;
+border: 1px solid #d1d5db;
+border-radius: 7px;
+background: #ffffff;
+}
+
+.quantity-control button {
+width: 44px;
+height: 44px;
+padding: 0;
+border: none;
+background: #ffffff;
+color: #374151;
+font-family: inherit;
+font-size: 20px;
+font-weight: 500;
+cursor: pointer;
+transition: background 0.2s ease, color 0.2s ease;
+}
+
+.quantity-control button:hover:not(:disabled) {
+background: #eff6ff;
+color: #2563eb;
+}
+
+.quantity-control button:disabled {
+background: #f8fafc;
+color: #cbd5e1;
+cursor: not-allowed;
+}
+
+.quantity-value {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 55px;
+height: 44px;
+border-right: 1px solid #e5e7eb;
+border-left: 1px solid #e5e7eb;
+background: #ffffff;
+color: #111827;
+font-size: 15px;
+font-weight: 600;
+}
+
+.ticket-limit {
+margin: 10px 0 0;
+color: #64748b;
+font-size: 12px;
+}
+
+/* =========================================================
+COUPON SECTION
+========================================================= */
+
+.coupon-section {
+margin-top: 25px;
+padding: 22px;
+border: 1px solid #e1e7f0;
+border-radius: 12px;
+background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+}
+
+.coupon-heading {
+margin-bottom: 17px;
+}
+
+.coupon-heading h3 {
+margin: 0;
+color: #1e293b;
+font-size: 16px;
+font-weight: 750;
+}
+
+.coupon-heading p {
+margin: 7px 0 0;
+color: #64748b;
+font-size: 12px;
+line-height: 1.6;
+}
+
+.coupon-input-row {
+display: flex;
+align-items: stretch;
+gap: 10px;
+}
+
+.coupon-input-row input {
+flex: 1;
+width: 100%;
+min-width: 0;
+min-height: 46px;
+padding: 12px 14px;
+border: 1px solid #cbd5e1;
+border-radius: 8px;
+outline: none;
+background: #ffffff;
+color: #1e293b;
+font-family: inherit;
+font-size: 13px;
+font-weight: 600;
+letter-spacing: 0.5px;
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coupon-input-row input::placeholder {
+color: #94a3b8;
+font-weight: 400;
+letter-spacing: normal;
+}
+
+.coupon-input-row input:focus {
+border-color: #6254e8;
+box-shadow: 0 0 0 3px rgba(98, 84, 232, 0.1);
+}
+
+.coupon-input-row input:disabled {
+background: #f8fafc;
+cursor: not-allowed;
+}
+
+.coupon-apply-button {
+min-width: 95px;
+min-height: 46px;
+padding: 11px 18px;
+border: 1px solid #6254e8;
+border-radius: 8px;
+background: #6254e8;
+color: #ffffff;
+font-family: inherit;
+font-size: 13px;
+font-weight: 700;
+cursor: pointer;
+transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.coupon-apply-button:hover:not(:disabled) {
+background: #4e40d4;
+transform: translateY(-1px);
+}
+
+.coupon-apply-button:disabled {
+opacity: 0.65;
+cursor: not-allowed;
+}
+
+/* COUPON APPLIED */
+
+.coupon-applied-box {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 12px;
+padding: 15px;
+border: 1px solid #bbf7d0;
+border-radius: 9px;
+background: #f0fdf4;
+}
+
+.coupon-applied-details {
+display: flex;
+align-items: center;
+gap: 12px;
+min-width: 0;
+}
+
+.coupon-applied-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 42px;
+height: 42px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #dcfce7;
+color: #15803d;
+font-size: 22px;
+font-weight: 800;
+}
+
+.coupon-applied-details strong {
+display: block;
+color: #166534;
+font-size: 14px;
+font-weight: 800;
+overflow-wrap: anywhere;
+}
+
+.coupon-applied-details p {
+margin: 5px 0 0;
+color: #15803d;
+font-size: 12px;
+}
+
+.coupon-remove-button {
+flex-shrink: 0;
+padding: 7px 10px;
+border: 1px solid #bbf7d0;
+border-radius: 6px;
+background: #ffffff;
+color: #b91c1c;
+font-family: inherit;
+font-size: 11px;
+font-weight: 700;
+cursor: pointer;
+transition: background 0.2s ease;
+}
+
+.coupon-remove-button:hover:not(:disabled) {
+background: #fef2f2;
+}
+
+.coupon-remove-button:disabled {
+opacity: 0.6;
+cursor: not-allowed;
+}
+
+/* COUPON MESSAGES */
+
+.coupon-error,
+.coupon-success {
+margin: 12px 0 0;
+font-size: 12px;
+line-height: 1.6;
+}
+
+.coupon-error {
+color: #dc2626;
+}
+
+.coupon-success {
+color: #15803d;
+font-weight: 600;
+}
+
+/* =========================================================
+PRICE SUMMARY
+========================================================= */
+
+.total-section {
+display: flex;
+flex-direction: column;
+gap: 0;
+margin-top: 25px;
+padding: 19px 20px;
+border: 1px solid #e5e7eb;
+border-radius: 10px;
+background: #ffffff;
+}
+
+.price-summary-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+padding: 10px 0;
+}
+
+.price-summary-row span {
+color: #64748b;
+font-size: 13px;
+font-weight: 500;
+line-height: 1.6;
+}
+
+.price-summary-row strong {
+color: #1e293b;
+font-size: 14px;
+font-weight: 700;
+text-align: right;
+white-space: nowrap;
+}
+
+.discount-row strong {
+color: #15803d;
+}
+
+.final-price-row {
+margin-top: 9px;
+padding-top: 17px;
+border-top: 1px dashed #dbe1ea;
+}
+
+.final-price-row span {
+color: #111827;
+font-size: 15px;
+font-weight: 750;
+}
+
+.final-price-row strong {
+color: #2563eb;
+font-size: 25px;
+font-weight: 800;
+}
+
+/* BOOKING ERROR */
+
+.booking-error {
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 12px 14px;
+border: 1px solid #fecaca;
+border-radius: 7px;
+background: #fef2f2;
+color: #dc2626;
+font-size: 13px;
+line-height: 1.5;
+}
+
+/* CONFIRM BUTTON */
+
+.confirm-button {
+width: 100%;
+margin-top: 25px;
+padding: 13px 18px;
+border: 1px solid #2563eb;
+border-radius: 7px;
+background: #2563eb;
+color: #ffffff;
+font-family: inherit;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.confirm-button:hover:not(:disabled) {
+border-color: #1d4ed8;
+background: #1d4ed8;
+box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
+}
+
+.confirm-button:active:not(:disabled) {
+transform: translateY(1px);
+}
+
+.confirm-button:disabled {
+border-color: #93c5fd;
+background: #93c5fd;
+cursor: not-allowed;
+}
+
+/* SECONDARY BUTTON */
+
+.secondary-button {
+width: 100%;
+margin-top: 12px;
+padding: 12px 18px;
+border: 1px solid #d1d5db;
+border-radius: 7px;
+background: #ffffff;
+color: #374151;
+font-family: inherit;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.secondary-button:hover {
+border-color: #2563eb;
+background: #eff6ff;
+color: #2563eb;
+}
+
+.secondary-button:disabled {
+opacity: 0.6;
+cursor: not-allowed;
+}
+
+/* SOLD OUT */
+
+.sold-out-box {
+margin: 20px 0;
+padding: 13px 16px;
+border: 1px solid #e5e7eb;
+border-radius: 7px;
+background: #f3f4f6;
+color: #6b7280;
+font-size: 14px;
+font-weight: 600;
+text-align: center;
+}
+
+.booking-card > p {
+color: #6b7280;
+font-size: 14px;
+line-height: 1.6;
+}
+
+/* =========================================================
+RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 700px) {
+.booking-page {
+padding: 35px 15px 50px;
+}
+
+
+.booking-card {
+    padding: 28px 22px;
+}
+
+.booking-header h1 {
+    font-size: 27px;
+}
+
+.booking-info-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.booking-info-row strong {
+    text-align: left;
+}
+
+.coupon-section {
+    padding: 18px;
+}
+
+.final-price-row strong {
+    font-size: 22px;
+}
+
+
+}
+
+@media (max-width: 500px) {
+.booking-card {
+padding: 24px 18px;
+border-radius: 10px;
+}
+
+
+.booking-header h1 {
+    font-size: 25px;
+}
+
+.quantity-section {
+    padding: 18px;
+}
+
+.coupon-section {
+    padding: 15px;
+}
+
+.coupon-input-row {
+    flex-direction: column;
+}
+
+.coupon-apply-button {
+    width: 100%;
+}
+
+.coupon-applied-box {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.total-section {
+    padding: 16px;
+}
+
+.price-summary-row {
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.price-summary-row span {
+    font-size: 12px;
+}
+
+.price-summary-row strong {
+    font-size: 13px;
+}
+
+.final-price-row strong {
+    font-size: 21px;
+}
+
+
+}
